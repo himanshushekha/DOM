@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Dom</title>
+</head>
+<body>
+    <ul id="menu">
+        <li>home</li>
+        <li>product</li>
+        <li>about</li>
+    </ul>
+    <script>
+        let elm= document.getElementById("menu");
+        let item = document.createElement("li");
+        item.textContent="services";
+
+        let replace = elm.firstElementChild.nextElementSibling;
+        elm.replaceChild(item,replace);
+        </script>
+</body>
+</html>

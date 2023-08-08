@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM INSERT ADJACENT HTML </title>
+</head>
+<body>
+    
+<div id="intro">
+
+        <h2> HEADING 2 </h2>
+           <p>THIS IS PARAGRAPH TAG</p>
+</div>
+   
+    <script>
+        let elm = document.getElementById("intro");
+        let html ="<h1> new h1</h1>";
+        elm.insertAdjacentHTML('beforebegin',html);
+       elm.insertAdjacentHTML('beforebegin',html);
+    </script>
+</body>
+</html>

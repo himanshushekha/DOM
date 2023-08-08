@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM CLASS SELECTOR</title>
+</head>
+<body>
+    <ul>
+        <li class="cl">FIRST</li>
+        <li>SECOND</li>
+        <li class="cl">THIRD</li>
+        
+    </ul>
+    <script>
+        let elm1 =document.getElementsByClassName("cl");
+      
+        for(let i =0;i<elm1.length;i++)
+        {
+            elm1[i].innerHTML="<p>hello class selector</P"
+        }
+        
+    </script>
+</body>
+</html>

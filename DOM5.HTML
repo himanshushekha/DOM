@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM TRAVERSE</title>
+</head>
+<body>
+    
+    <ul >
+        <li >LIST 1</li>
+        <li id="intro" > LIST 2</li>
+        <li>LIST 3</li>
+    </ul>
+    <script>
+// parent to child
+  let elm = document.getElementById("intro");
+  let parent = elm.previousElementSibling;
+       parent.innerHTML="<h1> previous </h1>";
+ 
+
+
+    </script>
+</body>
+</html>

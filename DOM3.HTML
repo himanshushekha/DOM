@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM TAG</title>
+</head>
+<body>
+    <ul>
+        <li>FIRST</li>
+        
+        <li>SECOND</li>
+        <li>THIRD</li>
+        
+    </ul>
+    <script>
+        let tag = document.getElementsByTagName("li");
+        for(let i=0;i<tag.length;i++)
+        {
+            tag[i].innerHTML=  "<h1>SELECTOR IS THERE</h1> ";
+        }
+ 
+    </script>
+</body>
+</html>
